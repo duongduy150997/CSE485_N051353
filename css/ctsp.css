@@ -1,0 +1,268 @@
+body{
+	font-size: 16px;
+	font-family: 'Montserrat';
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 15px;
+    
+}
+.table1 {
+	background-color: #f4f4f9;
+	font-size: 16px;
+	text-align: center;
+	font-color: #2c2c30;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+td{
+	padding: 10px;
+}
+
+.dt1{
+	background-color: #a5910d;
+	height: 50px;
+	width: 250px;
+	display: block;
+}
+.sptt{
+	border-style:solid; 
+	border-width:1px;
+	border-color: #858a91;
+	padding: 10px;
+}
+.amh{
+	margin: 2px;
+	max-width: 250px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b71d8b;
+
+}
+''.ss2{
+	display: block;
+	border-style:solid; 
+	border-width:1px;
+	border-color: #858a91;
+}
+
+.ss2 .row .column1 img {
+	max-width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+.ss1{
+	display: block;
+	text-transform: uppercase;
+	padding: 10px 0;
+	border-bottom: 2px solid #ccc;
+	position: relative;
+	margin: auto;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column1 {
+	float: left;
+    padding: 10px;
+}
+
+/* display all column in one line*/
+.r {
+	white-space: nowrap;
+	overflow-y: auto;
+}
+
+.column {
+	display:inline-block;
+	white-space: normal;
+    height: 160px;
+    margin-right: 1%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.column img {
+    opacity: 0.8; 
+    cursor: pointer;
+   	height: 100%;
+   	display: block;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.anhdm{
+	width: 100%;
+	height: 250px;
+}
+
+.download{
+	border-style:solid;
+	border-color: #858a91;
+	width: height: 50px;
+	width: 250px;
+	background-color: #525760;
+	display: block;
+}
+
+/* do slide show trick */
+.ss4  {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    height: 40vw;
+    max-height: 500px;
+}
+
+#expandedImg {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+/* quang css updated */
+.choosen-img:after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	width: 100%;
+	left: 0;
+	height: 2px;
+	margin: 0 auto;
+	/*padding: 1%;*/
+	background-color: black;
+}
+
+.bg-3 {
+	padding-bottom: 100px;
+}
+
+.blank-space-top {
+	height: 80px;
+}
+
+.page-mapping {
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+	/*border: 1px solid black;*/
+}
+
+.page-mapping ol {
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.page-mapping ol li {
+	display: inline;
+}
+
+.page-mapping ol li a {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	padding-right: 5px;
+	vertical-align: middle;
+	color: black;
+	text-decoration: none;
+}
+
+.ctsp-info {
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.green-bg {
+	background-color: #5cb85c !important;
+}
+
+.blue-bg {
+	background-color: #4ba5dd !important;
+}
+
+.green-bg a, .blue-bg a {
+	color: white !important;
+}
+
+.display-btn {
+	padding-top: 50px;
+	/*padding-bottom: 50px;*/
+}
+
+.pro-img-frame {
+	width: 370px;
+	width: 100%;
+	max-height: 210px;
+	min-height: auto;
+	position: relative;
+	display: block;
+	margin: auto;
+}
+
+.col-padding {
+	padding-bottom: 20px;
+}
+
+.pro-name {
+	/*height: 20px;*/
+	font-size: 14px;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	/*font-size: 17px;*/
+	padding: 10px;
+	position: relative;
+	letter-spacing: -.3px;
+}
+
+.yellow {
+	color: #d58512 !important;
+}
+
+.green {
+	color: #5cb85c !important;
+}
+
+.blue {
+	color: #4ba5dd !important;
+}
+
+/* change size of column when screen small*/
+@media only screen and (max-width: 599px) {
+	.column {
+	   	height: 80px;
+	}
+}
+
+.container {
+	animation: fadein 2s !important;
+}
+
+::-webkit-scrollbar {
+	/*top: 10px;*/
+}
