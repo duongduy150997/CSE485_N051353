@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Office</title>
+	<title>Văn phòng</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
@@ -20,6 +21,7 @@
 	<script src="../../../javascript/header.js"></script>
 	<script src="../../../javascript/room.js"></script>
 	<script src="../../../javascript/comparison.js"></script>
+	<script src="../../../javascript/add-to-cart.js"></script>
 </head>
 <body>
 <!------------------------------ begin of navbar col -------------------------------------------->
@@ -29,8 +31,9 @@
 				<a href="../../../home.html">DURABLE</a>				
 			</div>
 			<div class="bag-item show-bag">
-				<a href="">
-					<i class="fa fa-shopping-bag"></i>
+				<a href="../../addtocart.html">
+					<i class="fa fa-shopping-cart"></i>
+					<span>0</span>
 				</a>
 			</div>
 		</div>
@@ -52,22 +55,22 @@
 					<a class="catalogue" href="living.html"><i class="icon-navbar fa fa-coffee"></i>Phòng khách</a>
 				</li>
 				<li>
-					<a class="catalogue" href="#"><i class="icon-navbar fa fa-bed"></i>Phòng ngủ</a>
+					<a class="catalogue" href="bedroom.html"><i class="icon-navbar fa fa-bed"></i>Phòng ngủ</a>
 				</li>
 				<li>
-					<a class="catalogue" href="office.html"><i class="icon-navbar fa fa-desktop"></i>Phòng làm việc</a>
+					<a class="catalogue" href="office.html"><i class="icon-navbar fa fa-desktop"></i>Văn phòng</a>
 				</li>	
 				<li>
-					<a class="catalogue" href="kitchen.html"><i class="icon-navbar fa fa-utensils"></i>Phòng ăn</a>
+					<a class="catalogue" href="kitchen.html"><i class="icon-navbar fa fa-utensils"></i>Phòng bếp</a>
 				</li>
 				<li>
 					<a class="catalogue" href="bathroom.html"><i class="icon-navbar fa fa-bath"></i>Phòng tắm</a>
 				</li>
 				<li class="brand-dropdown-1">
-					<span class="catalogue"><i class="icon-navbar far fa-address-card"></i>About Us</span>
+					<span class="catalogue"><i class="icon-navbar far fa-address-card"></i>Chúng tôi</span>
 					<ul class="drop-menu-1">
-						<li><a href="../../../about-me.html">Our Story</a></li>
-						<li><a href="../../../contact-us.html">Contact Us</a></li>
+						<li><a href="../../../about-me.html">Giới thiệu về chúng tôi</a></li>
+						<li><a href="../../../contact-us.html">Liên hệ với chúng tôi</a></li>
 					</ul>
 				</li>							
 			</ul>			
@@ -80,20 +83,20 @@
 		<div class="blank-space-top"></div>
 		<div class="page-mapping">
 			<ol>
-				<li><a href="../../../home.html">Home</a>/</li>
+				<li><a href="../../../home.html">Trang chủ</a>/</li>
 				<!-- <li><a href="../brand.html">Brands</a>/</li> -->
-				<li><a href="#">Phòng làm việc</a></li>
+				<li><a href="#">Văn phòng</a></li>
 				<!-- <li><a href="#">Sofas</a></li> -->
 			</ol>
 		</div>
 		<div class="product-title-banner">
-			<p>Phòng làm việc</p>
+			<p>Văn phòng</p>
 		</div>
 		<!-- <div class="test"> -->
 			
 		<!-- </div> -->
 		<div class="brand-banner office-banner darken-layer darken-with-text">
-				<p>Phòng làm việc</p>
+				<p>Văn phòng</p>
 		</div>
 
 		<div class="line-break"></div>
@@ -103,7 +106,8 @@
 					<img src="../../../image/brands/durable.jpg">
 				</div>
 				<div class="col-md-12 col-lg-6  w3-light-grey">
-					<p><b>Mercury Company</b> cloneted building furniture specific for this industry and also utilizing Amish furniture builders for exceptional quality and strength.  Not yet satisfied, The Durable Furniture Company began using a custom finish shop and upholstery for the healthcare industry to provide the ultimate products.  We believe a unique and special industry requires a specific solution for home furnishings. You want furniture that promotes a natural living environment but can also withstand the rigors of working with people who have challenging needs.</p>
+                    <h3>Nhà của bạn, phong cách của bạn</h3>
+					<p>Đến với<b> Nội thất DURABLE</b> Bạn sẽ nhận thấy rõ một không gian nội thất cần được chăm chút tỉ mỉ đến từng chi tiết. Luôn giữ trên mình tâm huyết của những nhà thiết kế chúng tôi với ước mơ khao khát mang đến Khách hàng những sản phẩm tinh tế tuyệt đối.Chúng tôi luôn lắng nghe mong muốn của Khách hàng để tạo ra những ý tưởng thiết kế độc đáo vẫn gắn liền với nhu cầu thực tế của bạn, đưa ra quan điểm giúp Bạn định hình lại phong cách trang trí nội thất hài hoà cho mỗi căn phòng của từng thành viên trong gia đình mình.</p>
 				</div>
 			
 				<div class="brand-info-img col-md-12 col-lg-4  w3-light-grey">
@@ -144,14 +148,14 @@
 		<!-- <div class="pro-content container"> -->
 <!------------------------------ begin of product col -------------------------------------------->
 			<div class="container">
-				<div class="row">
+				<div class="row row-padding">
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Office BNV4" data-id="bnv4" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd">
 							<a href="../../../ctsp/deskstaff/bnv4.html">
 								<img class="pro-img-frame" src="../../../image/deskstaff/bnv4_mini.jpg" alt="">								
 							</a>
 							<div class="pro-name">
-								<span class="">Bathtub BNV4</span>
+								<span class="">Bàn văn phòng BNV4</span>
 								<span class="right red">23000vnd</span>
 							</div>
 				            <div class="overlay1">
@@ -165,8 +169,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -180,7 +184,7 @@
 									<img class="pro-img-frame" src="../../../image/deskstaff/bnv5_mini.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Office BT004</span>
+									<span class="left">Bàn văn phòng BT004</span>
 									<span class="right red">23000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -193,8 +197,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -207,7 +211,7 @@
 									<img class="pro-img-frame" src="../../../image/deskstaff/bnv9_mini.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Office BNV9</span>
+									<span class="left">Bàn văn phòng BNV9</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -220,8 +224,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -234,7 +238,7 @@
 									<img class="pro-img-frame" src="../../../image/deskstaff/bnv10_mini.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Office BNV10</span>
+									<span class="left">Bàn văn phòng BNV10</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -247,8 +251,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -261,7 +265,7 @@
 									<img class="pro-img-frame" src="../../../image/deskstaff/bnv20_mini.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Office BNV20</span>
+									<span class="left">Bàn văn phòng BNV20</span>
 									<span class="right red">75000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -274,8 +278,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -291,10 +295,10 @@
 	    <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
 	        <div class="w3-row">
 	            <div class="w3-col l9 m8 s6 w3-margin-top">
-	                <h4>Added for comparison</h4>
+	                <h4>Đã thêm để só sánh</h4>
 	            </div>
 	            <div class="w3-col l3 m4 s6 w3-margin-top">
-	                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+	                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>So sánh</button>
 	            </div>
 	        </div>
 	        <div class=" titleMargin w3-container comparePan">
@@ -321,13 +325,13 @@
 			<div class="row">
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<h6>Thiết kế</h6>
+						<h6>Phòng</h6>
 						<ul>
-							<li><a style="color: #6b6b6b; ">Phòng khách</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng ngủ</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng làm việc</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng ăn</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng tắm</a></li>
+							<li><a href="living.html" style="color: #6b6b6b; ">Phòng khách</a></li>
+							<li><a href="bedroom.html" style="color: #6b6b6b; ">Phòng ngủ</a></li>
+							<li><a href="office.html" style="color: #6b6b6b; ">Văn phòng</a></li>
+							<li><a href="kitchen.html" style="color: #6b6b6b;">Phòng bếp</a></li>
+							<li><a href="bathroom.html" style="color: #6b6b6b; ">Phòng tắm</a></li>
 						</ul>
 					</div>
 				</div>
@@ -335,26 +339,26 @@
 					<div class="footer-content">
 						<h6>Thương hiệu</h6>
 						<ul>
-							<li><a style="color: #6b6b6b;" href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
-							<li><a style="color: #6b6b6b; " href="">Brand 2</a></li>
-							<li><a style="color: #6b6b6b; " href="">Brand 3</a></li>
-							<li><a style="color: #6b6b6b; " href="">Brand 4</a></li>
+							<li><a style="color: #6b6b6b;" href="mercury/sofa.html">Mercury</a></li>
+							<li><a style="color: #6b6b6b; " href="jupiter/sofa.html">Jupiter</a></li>
+							<li><a style="color: #6b6b6b; " href="mars/sofa.html">Mars</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
+						<a href="contact-us.html" class="contact-us" style="color: #6b6b6b;" class="">Liên hệ với chúng tôi </a>
 						<ul>
-							<li><a style="color: #6b6b6b;" target="_blank" href="">..........</a></li>
-							<li><a style="color: #6b6b6b; " href="mailto:.sla@gmail.com">.sla@gmail.com</a></li>
+							<li style="color: #6b6b6b; padding: 10px 0;">9:00am – 19:00pm, Monday – Sunday</li>		
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3957427545065!2d105.765879714219!3d20.734748086158344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313435584e0d60fb%3A0x54072aa5012803f2!2zVHJ1bmcgdMOibSBUaMawxqFuZyBt4bqhaSBWw6JuIMSQw6xuaA!5e0!3m2!1svi!2s!4v1545494232502">TTTM thị trấn Vân Đình-Ứng Hòa-HN</a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:duongmanhduy.sla@gmail.com">duongmanhduy.sla@gmail.com</a></li>
 							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<h6>FOLLOW</h6>
+						<h6>Theo dõi</h6>
 						<a href="" class="footer-icon"><i class="fab fa-facebook-square"></i></a>
 						<a href="" class="footer-icon"><i class="fab fa-instagram"></i></a>
 						<a href="" class="footer-icon"><i class="fab fa-google-plus-square"></i></a>
@@ -364,5 +368,10 @@
 			</div>
 		</div>
 	</div>
+	<div class="reserved">
+		<div class="container">
+			©2018 DURABLE FURNITURES COMPANY. All rights reserved.
+		</div>
+	</div>	
 </body>
 </html>

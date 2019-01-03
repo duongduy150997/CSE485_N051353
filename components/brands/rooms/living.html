@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Living room</title>
+	<title>Phòng khách</title>
 	<meta name="viewport" content="width=device-width" />
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -21,6 +22,7 @@
 	<script src="../../../javascript/header.js"></script>
 	<script src="../../../javascript/room.js"></script>
 	<script src="../../../javascript/comparison.js"></script>
+	<script src="../../../javascript/add-to-cart.js"></script>
 </head>
 <body>
 <!------------------------------ begin of navbar col -------------------------------------------->
@@ -30,8 +32,9 @@
 				<a href="../../../home.html">DURABLE</a>				
 			</div>
 			<div class="bag-item show-bag">
-				<a href="">
-					<i class="fa fa-shopping-bag"></i>
+				<a href="../../addtocart.html">
+					<i class="fa fa-shopping-cart"></i>
+					<span>0</span>
 				</a>
 			</div>
 		</div>
@@ -56,19 +59,19 @@
 					<a class="catalogue" href="bedroom.html"><i class="icon-navbar fa fa-bed"></i>Phòng ngủ</a>
 				</li>
 				<li>
-					<a class="catalogue" href="office.html"><i class="icon-navbar fa fa-desktop"></i>Phòng làm việc</a>
+					<a class="catalogue" href="office.html"><i class="icon-navbar fa fa-desktop"></i>Văn phòng</a>
 				</li>	
 				<li>
-					<a class="catalogue" href="kitchen.html"><i class="icon-navbar fa fa-utensils"></i>phong ăn</a>
+					<a class="catalogue" href="kitchen.html"><i class="icon-navbar fa fa-utensils"></i>Phòng bếp</a>
 				</li>
 				<li>
-					<a class="catalogue" href="bathroom.html"><i class="icon-navbar fa fa-bath"></i>Phong tắm</a>
+					<a class="catalogue" href="bathroom.html"><i class="icon-navbar fa fa-bath"></i>Phòng tắm</a>
 				</li>
 				<li class="brand-dropdown-1">
-					<span class="catalogue"><i class="icon-navbar far fa-address-card"></i>About Us</span>
+					<span class="catalogue"><i class="icon-navbar far fa-address-card"></i>Chúng tôi</span>
 					<ul class="drop-menu-1">
-						<li><a href="../../../about-me.html">Our Story</a></li>
-						<li><a href="../../../contact-us.html">Contact Us</a></li>
+						<li><a href="../../../about-me.html">Giới thiệu về chúng tôi</a></li>
+						<li><a href="../../../contact-us.html">Liên hệ với chũng tôi</a></li>
 					</ul>
 				</li>							
 			</ul>			
@@ -81,7 +84,7 @@
 		<div class="blank-space-top"></div>
 		<div class="page-mapping">
 			<ol>
-				<li><a href="../../../home.html">Home</a>/</li>
+				<li><a href="../../../home.html">Trang chủ</a>/</li>
 				<li><a href="#">Phòng khách</a></li>
 			</ol>
 		</div>
@@ -101,7 +104,8 @@
 					<img src="../../../image/brands/durable.jpg">
 				</div>
 				<div class="col-md-12 col-lg-6  w3-light-grey">
-					<p><b>The Durable Furniture Company</b> started building furniture specific for this industry and also utilizing Amish furniture builders for exceptional quality and strength.  Not yet satisfied, The Durable Furniture Company began using a custom finish shop and upholstery for the healthcare industry to provide the ultimate products.  We believe a unique and special industry requires a specific solution for home furnishings. You want furniture that promotes a natural living environment but can also withstand the rigors of working with people who have challenging needs.</p>
+				<h3>Nhà của bạn, phong cách của bạn</h3>
+					<p>Đến với<b> Nội thất DURABLE</b> Bạn sẽ nhận thấy rõ một không gian nội thất cần được chăm chút tỉ mỉ đến từng chi tiết. Luôn giữ trên mình tâm huyết của những nhà thiết kế chúng tôi với ước mơ khao khát mang đến Khách hàng những sản phẩm tinh tế tuyệt đối.Chúng tôi luôn lắng nghe mong muốn của Khách hàng để tạo ra những ý tưởng thiết kế độc đáo vẫn gắn liền với nhu cầu thực tế của bạn, đưa ra quan điểm giúp Bạn định hình lại phong cách trang trí nội thất hài hoà cho mỗi căn phòng của từng thành viên trong gia đình mình.</p>
 				</div>
 				<!-- <div class="col-sm-12 col-md-1">
 					
@@ -115,24 +119,24 @@
 <!------------------------------ begin of sub menu col -------------------------------------------->
 			<div class="placeholder-left">
 				<div class="menu-left">
-					<p class="product-title-left">Products</p>
+					<p class="product-title-left">Các sản phẩm</p>
 					<ul class="brand-submenu-left">
-						<li class="show-all">All</li>
-						<li class="show-sofa">Sofas</li>
-						<li class="show-table">Tables</li>
+						<li class="show-all">Tất cả</li>
+						<li class="show-sofa">Ghế Sofa</li>
+						<li class="show-table">Bàn</li>
 					</ul>
 				</div>	
 			</div>
 			
 			<div class="mini-menu-left">
 				<div class="top-menu">
-					<span class="">Brands</span>
+					<span class="">Thương hiệu</span>
 				</div>
 				<div class="expand-menu">
 					<ul class="">
-						<li class="show-all">All</li>
-						<li class="show-sofa">Sofas</li>
-						<li class="show-table">Tables</li>
+						<li class="show-all">Tất cả</li>
+						<li class="show-sofa">Ghế Sofa</li>
+						<li class="show-table">Bàn</li>
 					</ul>
 				</div>
 			</div>
@@ -143,11 +147,11 @@
 				<div class="row">
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mercury 1" data-id="mersofa1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="mercury">
-							<a href="">
+							<a href="../../../ctsp/sofa/mersofa1.html">
 								<img class="pro-img-frame" src="../../../image/mercury/sofas/1.jpg" alt="">								
 							</a>
 							<div class="pro-name">
-								<span class="">Sofa Mercury 2</span>
+								<span class="">Ghế Sofa Mercury 1</span>
 								<span class="right red">23000vnd</span>
 							</div>
 				            <div class="overlay1">
@@ -159,8 +163,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -169,11 +173,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mercury 2" data-id="mersofa2" data-size="200x100x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="sofa" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/sofa/mersofa2.html">
 									<img class="pro-img-frame" src="../../../image/mercury/sofas/2.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mercury 2</span>
+									<span class="left">Ghế Sofa Mercury 2</span>
 									<span class="right red">23000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -186,8 +190,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -196,11 +200,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mercury 3" data-id="mersofa3" data-size="250x200x90" data-cover="polyester fibre" data-color="white" data-price="5000vnd" data-product="sofa" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/sofa/mersofa3.html">
 									<img class="pro-img-frame" src="../../../image/mercury/sofas/3.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mercury 3</span>
+									<span class="left">Ghế Sofa Mercury 3</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -213,8 +217,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -223,11 +227,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mercury 4" data-id="mersofa4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd" data-product="sofa" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/sofa/mersofa4.html">
 									<img class="pro-img-frame" src="../../../image/mercury/sofas/4.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mercury 4</span>
+									<span class="left">Ghế Sofa Mercury 4</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -240,157 +244,24 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mercury 5" data-id="mersofa5" data-size="300x250x90" data-cover="polyester fibre" data-color="brown" data-price="65200vnd" data-product="sofa" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/sofas/5.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mercury 5</span>
-									<span class="right red">65200vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mersofa5.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
 				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
+
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mercury 6" data-id="mersofa6" data-size="350x150x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="sofa" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/sofas/6.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mercury 6</span>
-									<span class="right red">23000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mersofa6.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mercury 7" data-id="mersofa7" data-size="150x100x90" data-cover="polyester fibre" data-color="brown" data-price="43300vnd" data-product="sofa" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/sofas/7.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mercury 7</span>
-									<span class="right red">43300vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mersofa7.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mercury 8" data-id="mersofa8" data-size="150x100x90" data-cover="polyester fibre" data-color="black" data-price="7900vnd" data-product="sofa" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/sofas/8.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mercury 8</span>
-									<span class="right red">7900vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mersofa8.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mercury 9" data-id="mersofa9" data-size="200x100x90" data-cover="polyester fibre" data-color="white" data-price="34000vnd" data-product="sofa" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/sofas/9.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mercury 9</span>
-									<span class="right red">34000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mersofa9.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
+
 					<!--- sofa mercury -->
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mercury 1" data-id="mertable1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="table" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-							<a href="">
+							<a href="../../../ctsp/Table/mertable1.html">
 								<img class="pro-img-frame" src="../../../image/mercury/tables/1.jpg">
 							</a>
 							<div class="pro-name">
-								<span class="left">Table Mercury 1</span>
+								<span class="left">Bàn Mercury 1</span>
 								<span class="right red">2000vnd</span>
 							</div>
 							<!-- </div> -->
@@ -403,8 +274,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -413,11 +284,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mercury 2" data-id="mertable2" data-size="200x100x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="table" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/mertable2.html">
 									<img class="pro-img-frame" src="../../../image/mercury/tables/2.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mercury 2</span>
+									<span class="left">Bàn Mercury 2</span>
 									<span class="right red">23000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -430,8 +301,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -440,11 +311,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mercury 3" data-id="mertable3" data-size="250x200x90" data-cover="polyester fibre" data-color="white" data-price="5000vnd" data-product="table" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/mertable3.html">
 									<img class="pro-img-frame" src="../../../image/mercury/tables/3.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mercury 3</span>
+									<span class="left">Bàn Mercury 3</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -457,8 +328,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -467,11 +338,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mercury 4" data-id="mertable4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd" data-product="table" data-brand="mercury">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/mertable4.html">
 									<img class="pro-img-frame" src="../../../image/mercury/tables/4.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mercury 4</span>
+									<span class="left">Bàn Mercury 4</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -484,117 +355,14 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Mercury 5" data-id="mertable5" data-size="300x250x90" data-cover="polyester fibre" data-color="brown" data-price="65200vnd" data-product="table" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/tables/5.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Mercury 5</span>
-									<span class="right red">65200vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mertable5.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
 				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Mercury 6" data-id="mertable6" data-size="350x150x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="table" data-brand="mercury">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/tables/6.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Mercury 6</span>
-									<span class="right red">23000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mertable6.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Mercury 7" data-id="mertable7" data-size="150x100x90" data-cover="polyester fibre" data-color="brown" data-price="43300vnd" data-product="table" data-brand="mercury">
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/tables/7.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Mercury 7</span>
-									<span class="right red">43300vnd</span>
-								</div>
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mertable7.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Mercury 8" data-id="mertable8" data-size="150x100x90" data-cover="polyester fibre" data-color="black" data-price="7900vnd" data-product="table" data-brand="mercury">
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mercury/tables/8.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Mercury 8</span>
-									<span class="right red">7900vnd</span>
-								</div>
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/mertable8.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
+
 					<!--- table mercury -->
 					
 					
@@ -602,11 +370,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mars 1" data-id="masofa1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Sofa/masofa1.html">
 									<img class="pro-img-frame" src="../../../image/mars/sofas/1.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mars 1</span>
+									<span class="left">Ghế Sofa Mars 1</span>
 									<span class="right red">2000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -619,8 +387,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -629,11 +397,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mars 2" data-id="masofa2" data-size="200x100x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="sofa" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Sofa/masofa2.html">
 									<img class="pro-img-frame" src="../../../image/mars/sofas/2.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mars 2</span>
+									<span class="left">Ghế Sofa Mars 2</span>
 									<span class="right red">23000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -646,8 +414,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -656,11 +424,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mars 3" data-id="masofa3" data-size="250x200x90" data-cover="polyester fibre" data-color="white" data-price="5000vnd" data-product="sofa" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Sofa/masofa3.html">
 									<img class="pro-img-frame" src="../../../image/mars/sofas/3.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mars 3</span>
+									<span class="left">Ghế Sofa Mars 3</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -673,8 +441,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -683,11 +451,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Mars 4" data-id="masofa4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd" data-product="sofa" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Sofa/masofa4.html">
 									<img class="pro-img-frame" src="../../../image/mars/sofas/4.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Mars 4</span>
+									<span class="left">Ghế Sofa Mars 4</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -700,157 +468,23 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mars 5" data-id="masofa5" data-size="300x250x90" data-cover="polyester fibre" data-color="brown" data-price="65200vnd" data-product="sofa" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/sofas/5.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mars 5</span>
-									<span class="right red">65200vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/masofa5.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
 				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mars 6" data-id="masofa6" data-size="350x150x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="sofa" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/sofas/6.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mars 6</span>
-									<span class="right red">23000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/masofa6.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mars 7" data-id="masofa7" data-size="150x100x90" data-cover="polyester fibre" data-color="brown" data-price="43300vnd" data-product="sofa" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/sofas/7.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mars 7</span>
-									<span class="right red">43300vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/masofa7.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mars 8" data-id="masofa8" data-size="150x100x90" data-cover="polyester fibre" data-color="black" data-price="7900vnd" data-product="sofa" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/sofas/8.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mars 8</span>
-									<span class="right red">7900vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/masofa8.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Mars 9" data-id="masofa9" data-size="200x100x90" data-cover="polyester fibre" data-color="white" data-price="34000vnd" data-product="sofa" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/sofas/9.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Mars 9</span>
-									<span class="right red">34000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/masofa9.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
+	
 					<!-- mars sofa -->
 					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mars 1" data-id="matable1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="table" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/matable1.html">
 									<img class="pro-img-frame" src="../../../image/mars/tables/1.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mars 1</span>
+									<span class="left">Bàn Mars 1</span>
 									<span class="right red">2000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -863,8 +497,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -873,11 +507,11 @@
 					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mars 2" data-id="matable2" data-size="200x100x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="table" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/matable2.html">
 									<img class="pro-img-frame" src="../../../image/mars/tables/2.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mars 2</span>
+									<span class="left">Bàn Mars 2</span>
 									<span class="right red">23000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -890,8 +524,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -900,11 +534,11 @@
 					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mars 3" data-id="matable3" data-size="250x200x90" data-cover="polyester fibre" data-color="white" data-price="5000vnd" data-product="table" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/matable3.html">
 									<img class="pro-img-frame" src="../../../image/mars/tables/3.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mars 3</span>
+									<span class="left">Bàn Mars 3</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -917,8 +551,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -927,11 +561,11 @@
 					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Mars 4" data-id="matable4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd" data-product="table" data-brand="mars">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/matable4.html">
 									<img class="pro-img-frame" src="../../../image/mars/tables/4.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Mars 4</span>
+									<span class="left">Bàn Mars 4</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -944,67 +578,14 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Mars 5" data-id="matable5" data-size="300x250x90" data-cover="polyester fibre" data-color="brown" data-price="65200vnd" data-product="table" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/tables/5.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Mars 5</span>
-									<span class="right red">65200vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/matable5.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
 				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Mars 6" data-id="matable6" data-size="350x150x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="table" data-brand="mars">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/mars/tables/6.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Mars 6</span>
-									<span class="right red">23000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/matable6.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
+
 					<!-- mars table-->
 					
 					
@@ -1012,11 +593,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Jupiter 1" data-id="jutable1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="table" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/jutable1.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/tables/1.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Jupiter 1</span>
+									<span class="left">Bàn Jupiter 1</span>
 									<span class="right red">2000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1029,8 +610,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -1039,11 +620,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Jupiter 2" data-id="jutable2" data-size="200x100x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="table" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/jutable2.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/tables/2.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Jupiter 2</span>
+									<span class="left">Bàn Jupiter 2</span>
 									<span class="right red">23000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1056,8 +637,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -1066,11 +647,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Jupiter 3" data-id="jutable3" data-size="250x200x90" data-cover="polyester fibre" data-color="white" data-price="5000vnd" data-product="table" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/jutable3.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/tables/3.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Jupiter 3</span>
+									<span class="left">Bàn Jupiter 3</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1083,8 +664,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -1093,11 +674,11 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Table Jupiter 4" data-id="jutable4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd" data-product="table" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/Table/jutable4.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/tables/4.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Table Jupiter 4</span>
+									<span class="left">Bàn Jupiter 4</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1110,157 +691,23 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Jupiter 5" data-id="jutable5" data-size="300x250x90" data-cover="polyester fibre" data-color="brown" data-price="65200vnd" data-product="table" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/tables/5.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Jupiter 5</span>
-									<span class="right red">65200vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jutable5.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
 				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Jupiter 6" data-id="jutable6" data-size="350x150x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="table" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/tables/6.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Jupiter 6</span>
-									<span class="right red">23000vnd</span>
-								</div>
-							</d<!-- i -->v>
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jutable6.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Jupiter 7" data-id="jutable7" data-size="150x100x90" data-cover="polyester fibre" data-color="brown" data-price="43300vnd" data-product="table" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/tables/7.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Jupiter 7</span>
-									<span class="right red">43300vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jutable7.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Jupiter 8" data-id="jutable8" data-size="150x100x90" data-cover="polyester fibre" data-color="black" data-price="7900vnd" data-product="table" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/tables/8.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Jupiter 8</span>
-									<span class="right red">7900vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jutable8.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Table Jupiter 9" data-id="jutable8" data-size="150x100x90" data-cover="polyester fibre" data-color="black" data-price="7900vnd" data-product="table" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/tables/9.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Table Jupiter 9</span>
-									<span class="right red">7900vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jutable9.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
+
 					<!-- jupiter table -->
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Jupiter 1" data-id="jusofa1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/	sofa/jusofa1.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/sofas/1.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Jupiter 1</span>
+									<span class="left">Ghế Sofa Jupiter 1</span>
 									<span class="right red">2000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1273,8 +720,8 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
@@ -1283,38 +730,39 @@
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Jupiter 2" data-id="jusofa2" data-size="200x100x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="sofa" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/	sofa/jusofa2.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/sofas/2.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Jupiter 2</span>
+									<span class="left">Ghế Sofa Jupiter 2</span>
 									<span class="right red">23000vnd</span>
 								</div>
-							<!-- </div> -->
 							<div class="overlay1">
 				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
 				                <p class="icon-links">
-				                    <a href="../../../download/jusofa2.docx" download>
+				                    <a href="../../../download/jusofa3.docx" download>
+
 				                        <span class="fas fa-download green"></span>
 				                    </a>
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
+
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Jupiter 3" data-id="jusofa3" data-size="250x200x90" data-cover="polyester fibre" data-color="white" data-price="5000vnd" data-product="sofa" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/	sofa/jusofa3.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/sofas/3.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Jupiter 3</span>
+									<span class="left">Ghế Sofa Jupiter 3</span>
 									<span class="right red">5000vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1322,26 +770,28 @@
 				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
 				                <p class="icon-links">
 				                    <a href="../../../download/jusofa3.docx" download>
+
 				                        <span class="fas fa-download green"></span>
 				                    </a>
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
+
 					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
 						<div class="pro-item hovereffect" data-title="Sofa Jupiter 4" data-id="jusofa4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd" data-product="sofa" data-brand="jupiter">
 							<!-- <div class="underline-hover2"> -->
-								<a href="">
+								<a href="../../../ctsp/sofa/jusofa4.html">
 									<img class="pro-img-frame" src="../../../image/jupiter/sofas/4.jpg">
 								</a>
 								<div class="pro-name">
-									<span class="left">Sofa Jupiter 4</span>
+									<span class="left">Ghế Sofa Jupiter 4</span>
 									<span class="right red">7500vnd</span>
 								</div>
 							<!-- </div> -->
@@ -1354,165 +804,132 @@
 				                    <a href="javascript:void(0)">
 				                        <span class="fas fa-clone yellow addToCompare"></span>
 				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Jupiter 5" data-id="jusofa5" data-size="300x250x90" data-cover="polyester fibre" data-color="brown" data-price="65200vnd" data-product="sofa" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/sofas/5.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Jupiter 5</span>
-									<span class="right red">65200vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jusofa5.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
 				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
 				                    </a>
 				                </p>
 				            </div>
 						</div>
 					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Jupiter 6" data-id="jusofa6" data-size="350x150x90" data-cover="leather" data-color="grey" data-price="23000vnd" data-product="sofa" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/sofas/6.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Jupiter 6</span>
-									<span class="right red">23000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jusofa6.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Jupiter 7" data-id="jusofa7" data-size="150x100x90" data-cover="polyester fibre" data-color="brown" data-price="43300vnd" data-product="sofa" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/sofas/7.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Jupiter 7</span>
-									<span class="right red">43300vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jusofa7.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Jupiter 8" data-id="jusofa8" data-size="150x100x90" data-cover="polyester fibre" data-color="black" data-price="7900vnd" data-product="sofa" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/sofas/8.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Jupiter 8</span>
-									<span class="right red">7900vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jusofa8.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
-					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
-						<div class="pro-item hovereffect" data-title="Sofa Jupiter 9" data-id="jusofa9" data-size="200x100x90" data-cover="polyester fibre" data-color="white" data-price="34000vnd" data-product="sofa" data-brand="jupiter">
-							<!-- <div class="underline-hover2"> -->
-								<a href="">
-									<img class="pro-img-frame" src="../../../image/jupiter/sofas/9.jpg">
-								</a>
-								<div class="pro-name">
-									<span class="left">Sofa Jupiter 9</span>
-									<span class="right red">34000vnd</span>
-								</div>
-							<!-- </div> -->
-							<div class="overlay1">
-				                <a class="detail-btn" href=""><span class="fas fa-search"></span></a>
-				                <p class="icon-links">
-				                    <a href="../../../download/jusofa9.docx" download>
-				                        <span class="fas fa-download green"></span>
-				                    </a>
-				                    <a href="javascript:void(0)">
-				                        <span class="fas fa-clone yellow addToCompare"></span>
-				                    </a>
-				                    <a href="#">
-				                        <span class="fas fa-cart-plus blue"></span>
-				                    </a>
-				                </p>
-				            </div>
-						</div>
-					</div>
+	
 					<!-- jupiter sofa -->
-					
-				
+					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
+						<div class="pro-item hovereffect" data-title="Table BT014" data-id="bt014" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="durable">
+							<a href="../../../ctsp/table/bt014.html">
+								<img class="pro-img-frame" src="../../../image/table/bt014.jpg" alt="">								
+							</a>
+							<div class="pro-name">
+								<span class="">Bàn BT014</span>
+								<span class="right red">23000vnd</span>
+							</div>
+				            <div class="overlay1">
+				                <a class="detail-btn" href="../../../ctsp/table/bt014.html"><span class="fas fa-search"></span></a>
+				                <p class="icon-links">
+				                    <a href="../../../download/table/bt014.docx" download>
+				                        <span class="fas fa-download green"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-clone yellow addToCompare"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
+				                    </a>
+				                </p>
+				            </div>
+						</div>
+					</div>
+					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
+						<div class="pro-item hovereffect" data-title="Table BT019" data-id="bt019" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="durable">
+							<a href="../../../ctsp/table/bt019.html">
+								<img class="pro-img-frame" src="../../../image/table/bt019.jpg" alt="">								
+							</a>
+							<div class="pro-name">
+								<span class="">Bàn BT019</span>
+								<span class="right red">23000vnd</span>
+							</div>
+				            <div class="overlay1">
+				                <a class="detail-btn" href="../../../ctsp/table/bt019.html"><span class="fas fa-search"></span></a>
+				                <p class="icon-links">
+				                    <a href="../../../download/table/bt019.docx" download>
+				                        <span class="fas fa-download green"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-clone yellow addToCompare"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
+				                    </a>
+				                </p>
+				            </div>
+						</div>
+					</div>
+					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
+						<div class="pro-item hovereffect" data-title="Table BT023" data-id="bt023" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="durable">
+							<a href="../../../ctsp/table/bt023.html">
+								<img class="pro-img-frame" src="../../../image/table/bt023.jpg" alt="">								
+							</a>
+							<div class="pro-name">
+								<span class="">Bàn BT023</span>
+								<span class="right red">23000vnd</span>
+							</div>
+				            <div class="overlay1">
+				                <a class="detail-btn" href="../../../ctsp/table/bt023.html"><span class="fas fa-search"></span></a>
+				                <p class="icon-links">
+				                    <a href="../../../download/table/bt023.docx" download>
+				                        <span class="fas fa-download green"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-clone yellow addToCompare"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
+				                    </a>
+				                </p>
+				            </div>
+						</div>
+					</div>
+					<div class="col-12 col-xs-6 col-sm-6 col-md-4 col-xl-3 col-padding">
+						<div class="pro-item hovereffect" data-title="Table BT026" data-id="bt026" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd" data-product="sofa" data-brand="durable">
+							<a href="../../../ctsp/table/bt026.html">
+								<img class="pro-img-frame" src="../../../image/table/bt026.jpg" alt="">								
+							</a>
+							<div class="pro-name">
+								<span class="">Bàn BT026</span>
+								<span class="right red">23000vnd</span>
+							</div>
+				            <div class="overlay1">
+				                <a class="detail-btn" href="../../../ctsp/table/bt026.html"><span class="fas fa-search"></span></a>
+				                <p class="icon-links">
+				                    <a href="../../../download/table/bt026.docx" download>
+				                        <span class="fas fa-download green"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-clone yellow addToCompare"></span>
+				                    </a>
+				                    <a href="javascript:void(0)">
+				                        <span class="fas fa-cart-plus blue addToCart"></span>
+				                    </a>
+				                </p>
+				            </div>
+						</div>
+					</div>
 
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+</div>
+
 <!------------------------------ begin of compare col -------------------------------------------->
 	<div class="w3-container  w3-center">
 	    <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
 	        <div class="w3-row">
 	            <div class="w3-col l9 m8 s6 w3-margin-top">
-	                <h4>Added for comparison</h4>
+	                <h4>Đã thêm để so sánh</h4>
 	            </div>
 	            <div class="w3-col l3 m4 s6 w3-margin-top">
-	                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+	                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>So sánh</button>
 	            </div>
 	        </div>
 	        <div class=" titleMargin w3-container comparePan">
@@ -1541,13 +958,13 @@
 			<div class="row">
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<h6>Thiết kế</h6>
+						<h6>Phòng</h6>
 						<ul>
-							<li><a style="color: #6b6b6b; ">Phòng khách</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng ngủ</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng làm việc</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng ăn</a></li>
-							<li><a style="color: #6b6b6b; ">Phòng tắm</a></li>
+							<li><a href="living.html" style="color: #6b6b6b; ">Phòng khách</a></li>
+							<li><a href="bedroom.html" style="color: #6b6b6b; ">Phòng ngủ</a></li>
+							<li><a href="office.html" style="color: #6b6b6b; ">Văn phòng</a></li>
+							<li><a href="kitchen.html" style="color: #6b6b6b; ">Phòng bếp</a></li>
+							<li><a href="bathroom.html" style="color: #6b6b6b; ">Phòng tắm</a></li>
 						</ul>
 					</div>
 				</div>
@@ -1555,26 +972,26 @@
 					<div class="footer-content">
 						<h6>Thương hiệu</h6>
 						<ul>
-							<li><a style="color: #6b6b6b;" href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
-							<li><a style="color: #6b6b6b; " href="">Brand 2</a></li>
-							<li><a style="color: #6b6b6b; " href="">Brand 3</a></li>
-							<li><a style="color: #6b6b6b; " href="">Brand 4</a></li>
+							<li><a style="color: #6b6b6b;" href="mercury/sofa.html">Mercury</a></li>
+							<li><a style="color: #6b6b6b; " href="jupiter/sofa.html">Jupiter</a></li>
+							<li><a style="color: #6b6b6b; " href="mars/sofa.html">Mars</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
+						<a href="contact-us.html" class="contact-us" style="color: #6b6b6b;" class="">Liên hệ với chúng tôi</a>
 						<ul>
-							<li><a style="color: #6b6b6b;" target="_blank" href="">.............</a></li>
-							<li><a style="color: #6b6b6b; " href="mailto:..sla@gmail.com">..sla@gmail.com</a></li>
+							<li style="color: #6b6b6b; padding: 10px 0;">9:00am – 19:00pm, Monday – Sunday</li>		
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3957427545065!2d105.765879714219!3d20.734748086158344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313435584e0d60fb%3A0x54072aa5012803f2!2zVHJ1bmcgdMOibSBUaMawxqFuZyBt4bqhaSBWw6JuIMSQw6xuaA!5e0!3m2!1svi!2s!4v1545494232502">TTTM thị trấn Vân Đình-Ứng Hòa-HN</a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:duongmanhduy.sla@gmail.com">duongmanhduy.sla@gmail.com</a></li>
 							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<h6>FOLLOW</h6>
+						<h6>Theo dõi</h6>
 						<a href="" class="footer-icon"><i class="fab fa-facebook-square"></i></a>
 						<a href="" class="footer-icon"><i class="fab fa-instagram"></i></a>
 						<a href="" class="footer-icon"><i class="fab fa-google-plus-square"></i></a>
@@ -1584,5 +1001,10 @@
 			</div>
 		</div>
 	</div>
+	<div class="reserved">
+		<div class="container">
+			©2018 DURABLE FURNITURES COMPANY. All rights reserved.
+		</div>
+	</div>	
 </body>
 </html>

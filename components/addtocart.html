@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Durable Brands</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- Animation on scroll -->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<!-- source file -->
+	<link rel="stylesheet" type="text/css" href="../css/style-home.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-cart.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/style-brand.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/style-brand-hover-effect.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-brand-comparison.css">
+	<script src="../javascript/header.js"></script>
+	<!-- <script src="../javascript/brand.js"></script> -->
+	<!-- <script src="../javascript/comparison.js"></script> -->
+	<!-- <script src="../javascript/add-to-cart.js"></script> -->
+	<script src="../javascript/cart-on-load.js"></script>
+</head>
+<body>
+<!------------------------------ begin of navbar col -------------------------------------------->
+	<div>
+		<div class="banner">
+			<div class="logo show">
+				<a href="../home.html">DURABLE</a>				
+			</div>
+			<div class="bag-item show-bag">
+				<a href="">
+					<i class="fa fa-shopping-cart"></i>
+					<span>0</span>
+				</a>
+			</div>
+		</div>
+		<div class="nav-bar">
+			<div class="menu-icon">
+				<a href="../home.html">DURABLE</a>
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
+			<ul class="sub-menu">
+				<li class="brand-dropdown">
+					<span class="catalogue"><a href="brands/brand.html"><i class="icon-navbar fa fa-star"></i>Thương Hiệu</a></span>
+					<ul class="drop-menu">
+						<li><a href="brands/mercury/sofa.html">Mercury</a></li>
+						<li><a href="brands/jupiter/sofa.html">Jupiter</a></li>
+						<li><a href="brands/mars/sofa.html">Mars</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="catalogue" href="brands/rooms/living.html"><i class="icon-navbar fa fa-coffee"></i>Phòng khách</a>
+				</li>
+				<li>
+					<a class="catalogue" href="brands/rooms/bedroom.html"><i class="icon-navbar fa fa-bed"></i>Phòng ngủ</a>
+				</li>
+				<li>
+					<a class="catalogue" href="brands/rooms/office.html"><i class="icon-navbar fa fa-desktop"></i>Phòng làm việc</a>
+				</li>	
+				<li>
+					<a class="catalogue" href="brands/rooms/kitchen.html"><i class="icon-navbar fa fa-utensils"></i>Phòng bếp</a>
+				</li>
+				<li>
+					<a class="catalogue" href="brands/rooms/bathroom.html"><i class="icon-navbar fa fa-bath"></i>Phòng tắm</a>
+				</li>
+				<li class="brand-dropdown-1">
+					<span class="catalogue"><i class="icon-navbar far fa-address-card"></i>Liên hệ</span>
+					<ul class="drop-menu-1">
+						<li><a href="../about-me.html">Giới thiệu</a></li>
+						<li><a href="../contact-us.html">Phản hồi</a></li>
+					</ul>
+				</li>							
+			</ul>			
+		</div>					
+	</div>
+<!------------------------------ end of navbar col -------------------------------------------->
+
+	<div class="content">
+<!------------------------------ begin of banner -------------------------------------------->
+		<div class="blank-space-top"></div>
+		<div class="page-mapping">
+			<ol>
+				<li><a href="../../home.html">Home</a>/</li>
+				<li><a href="#">Carts</a></li>
+			</ol>
+		</div>
+		<div class="product-title-banner">
+			<p>Giỏ hàng</p>
+		</div>
+
+		<div class="display-cart-items">
+			<table>
+				<thead>
+					<tr>
+						<th>Sản phẩm</th>
+						<th>Mã</th>
+						<th>Tên SP</th>
+						<th>Giá</th>
+						<th>Số lượng</th>
+						<th>Tổng</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody class="append-cart">
+					
+				</tbody>
+			</table>
+		</div>
+		<div class="pay-btn">
+			<button class="btn back-shop yellow-bg">Về trang chủ</button>
+			<button class="btn blue-bg">Thanh toán</button>
+			<button class="btn removeAllCart red-bg">Xóa toàn bộ</button>
+		</div>
+	</div>
+
+
+	<div class="go-top">
+		<a href="#">
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>Thiết kế</h6>
+						<ul>
+							<li><a style="color: #6b6b6b; ">Phòng khách</a></li>
+							<li><a style="color: #6b6b6b; ">Phòng ngủ</a></li>
+							<li><a style="color: #6b6b6b; ">Phòng làm việc</a></li>
+							<li><a style="color: #6b6b6b; ">Phòng ăn</a></li>
+							<li><a style="color: #6b6b6b; ">Phòng tắm</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>Thương hiệu</h6>
+						<ul>
+							<li><a style="color: #6b6b6b;" href="sofa.html">Mercury</a></li>
+							<li><a style="color: #6b6b6b; " href="../jupiter/sofa.html">Jupiter</a></li>
+							<li><a style="color: #6b6b6b; " href="../mars/sofa.html">Mars</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
+						<ul>
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3957427545065!2d105.765879714219!3d20.734748086158344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313435584e0d60fb%3A0x54072aa5012803f2!2zVHJ1bmcgdMOibSBUaMawxqFuZyBt4bqhaSBWw6JuIMSQw6xuaA!5e0!3m2!1svi!2s!4v1545494232502">TTTM Thị Trấn Vân Đình, Ứng Hòa , Hà Nội</a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:duongmanhduy.sla@gmail.com">duongmanhduy.sla@gmail.com</a></li>
+							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>FOLLOW</h6>
+						<a href="" class="footer-icon"><i class="fab fa-facebook-square"></i></a>
+						<a href="" class="footer-icon"><i class="fab fa-instagram"></i></a>
+						<a href="" class="footer-icon"><i class="fab fa-google-plus-square"></i></a>
+						<a href="" class="footer-icon"><i class="fab fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

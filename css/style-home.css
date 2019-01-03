@@ -15,6 +15,9 @@ body{
 	width: 100%;
 }
                                                   /*header*/
+
+
+/* add to cart btn*/
 .bag-item {
 	float: right;
 }
@@ -24,15 +27,70 @@ body{
 	padding: 0 20px;
 }
 .bag-item.show-bag{
-	display: none;
+	display: block;
+	top: 60px;
+	right: 0;
+	position: absolute;
+	z-index: 10000;
 }
-.bag-item a i{
+.bag-item.show-bag a i{
+	color: #999999;
+	line-height: 50px;
+}
+.bag-item.fix-bag a i{
 	color: #999999;
 	line-height: 60px;
 }
 .bag-item a:hover {
 	background: #d41f36;
 }
+
+.bag-item span {
+  /* number of items added to the cart */
+  font-family: 'Montserrat';
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  background-color: #46b29d;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  /* scale it down if no products have been added to the cart */
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s 0s;
+  -moz-transition: -moz-transform 0.2s 0s;
+  transition: transform 0.2s 0s;
+}
+
+.bag-item.items-added span {
+  /* counter visible when a product is added to the cart */
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+@media only screen and (min-width: 1100px) {
+  .bag-item {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+}
+/* add to cart btn*/
+
+
+
 .banner {
 	background: #444444;
 	height: 60px;
@@ -248,21 +306,42 @@ body{
 	    right: 0;
 	}
 	.bag-item.fix-bag {
-		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		line-height: 60px;
+		z-index: 1000000;
 	}
-	.banner{
+	.bag-item.show-bag {
+		position: fixed;
+		top: 0;
+		right: 0;
+		line-height: 60px;
+		z-index: 1000000;		
+	}
+	.banner .logo{
 		display: none;
+		position: relative;
 	}
 	.menu-icon{
 		display: block;
 		box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 	}
 	.menu-icon a{
+		right: 43%;
+		float: none;
+		position: absolute;
 		display: block;
+		text-align: center;
 		
-	}	
+	}
+	.brand-dropdown span a{
+		padding: 0;
+	}
 	.menu-icon i{
+		position: absolute;
 		display: block;
+		left: 10px;
 	}
 	.sub-menu li {
 		list-style-type: none;

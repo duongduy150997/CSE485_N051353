@@ -23,29 +23,12 @@
 	padding: 50px 0;
 	background-color: #eeeeee;
 }
-.contact-from{
-	display: block;
-	font-weight: bold;
-	font-size: 13px;
-	margin-top: 15px;
-}
+
 .columns{
 	display: block;
 	margin: 0 15px;
 }
-.from-to-email{
-	margin-top: : 15px;
-}
-.from-to-message{
-	display: block;	
-	margin-top: : 15px;
-}
-.contact-us-from{
-	width: 100%;
-}
-.message-here{
-	width: 100%;
-}
+
 .address{
 	list-style-type: none;
 }
@@ -55,7 +38,4 @@
 .address li a{
 	color: #212529;
 	text-decoration: none;
-}
-.from-to-submit{
-	margin-top: 15px;
 }
