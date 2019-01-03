@@ -20,7 +20,7 @@
 	<div>
 		<div class="banner">
 			<div class="logo show">
-				<a href="../../home.php">DURABLE</a>				
+				<a href="../../home.html">DURABLE</a>				
 			</div>
 			<div class="bag-item show-bag">
 				<a href="components/addtocart.html">
@@ -31,7 +31,7 @@
 		</div>
 		<div class="nav-bar">
 			<div class="menu-icon">
-				<a href="home.php">DURABLE</a>
+				<a href="home.html">DURABLE</a>
 				<i class="fa fa-bars fa-2x"></i>
 			</div>
 			<ul class="sub-menu">
@@ -87,7 +87,7 @@
 					<li><span style="font-weight: bold; font-size: 13px;">Thời gian làm việc: </span>9:00am – 19:00pm Thứ 2 – Chủ nhật</li>			
 					<li>
 						<span style="font-weight: bold; font-size: 13px;">Địa chỉ :</span>
-						<a target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3957427545065!2d105.765879714219!3d20.73474808615834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313435584e0d60fb%3A0x54072aa5012803f2!2zVHJ1bmcgdMOibSBUaMawxqFuZyBt4bqhaSBWw6JuIMSQw6xuaA!5e0!3m2!1svi!2s!4v1546514944352">Thị trấn Vân Đình, Ứng Hòa, Hà Nội</a>
+						<a target="_blank" href="https://www.google.com/maps/place/CT6A+Xa+La/@20.9608757,105.7984011,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad21667e0557:0xb8e1dd08a4c200e7!8m2!3d20.9608757!4d105.8005898">Thị trấn Vân Đình, Ứng Hòa, Hà Nội</a>
 					</li>
 					<li>
 						<span style="font-weight: bold; font-size: 13px;">Email: </span>
@@ -114,11 +114,6 @@
                 <label>Email</label> <span id="userEmail-info"
                     class="info"></span><br /> <input type="text"
                     class="input-field" name="userEmail" id="userEmail" />
-            </div>
-            <div class="input-row">
-                <label>Subject</label> <span id="subject-info"
-                    class="info"></span><br /> <input type="text"
-                    class="input-field" name="subject" id="subject" />
             </div>
             <div class="input-row">
                 <label>Message</label> <span id="userMessage-info"
@@ -176,10 +171,10 @@
 				</div>
 				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<a href="contact.php" class="contact-us" style="color: #6b6b6b;" class="">Liên hệ với chúng tôi</a>
+						<a href="contact-us.html" class="contact-us" style="color: #6b6b6b;" class="">Liên hệ với chúng tôi</a>
 						<ul>
 							<li style="color: #6b6b6b; padding: 10px 0;">9:00am – 19:00pm, Monday – Sunday</li>			
-							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3957427545065!2d105.765879714219!3d20.73474808615834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313435584e0d60fb%3A0x54072aa5012803f2!2zVHJ1bmcgdMOibSBUaMawxqFuZyBt4bqhaSBWw6JuIMSQw6xuaA!5e0!3m2!1svi!2s!4v1546514944352">TTTM Thị Trấn Vân Đình, Ứng Hòa, Hà Nội</a></li>
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3957427545065!2d105.765879714219!3d20.734748086158344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313435584e0d60fb%3A0x54072aa5012803f2!2zVHJ1bmcgdMOibSBUaMawxqFuZyBt4bqhaSBWw6JuIMSQw6xuaA!5e0!3m2!1svi!2s!4v1545494232502">TTTM Thị Trấn Vân Đình, Ứng Hòa, Hà Nội</a></li>
 							<li><a style="color: #6b6b6b; " href="mailto:duongmanhduy.sla@gmail.com">duongmanhduy.sla@gmail.com</a></li>
 							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
 						</ul>
@@ -202,7 +197,49 @@
 			©2018 DURABLE FURNITURES COMPANY. All rights reserved.
 		</div>
 	</div>
-	<script>
+	<script type="text/javascript">
+        function validateContactForm() {
+            var valid = true;
+
+            $(".info").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var userName = $("#userName").val();
+            var userEmail = $("#userEmail").val();
+            var subject = $("#subject").val();
+            var content = $("#content").val();
+            
+            if (userName == "") {
+                $("#userName-info").html("Required.");
+                $("#userName").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (userEmail == "") {
+                $("#userEmail-info").html("Required.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+            {
+                $("#userEmail-info").html("Invalid Email Address.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+
+            if (subject == "") {
+                $("#subject-info").html("Required.");
+                $("#subject").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (content == "") {
+                $("#userMessage-info").html("Required.");
+                $("#content").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            return valid;
+        }
+</script>
+
+<script>
 	function initMap() {
 	var uluru = {lat: 20.9608757, lng: 105.7984011};
 	var map = new google.maps.Map(document.getElementById('map'), {
@@ -218,5 +255,6 @@
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_WwKSRt66E_GOZvnKd_g_zRLoRtiylKo&callback=initMap">
 	</script>
+	
 </body>
 </html>
